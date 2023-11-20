@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf7e1; /* Light green background */
+    color: #333; /* Dark text color */
+}
+
+nav {
+    background-color: #556b2f; /* Olive green */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* White text color for navigation links */
+}
+
+main {
+    text-align: center;
+}
+
+.hero {
+    background-color: #8fbc8f; /* Dark olive green */
+    padding: 40px;
+    color: #fff; /* White text color */
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.feature {
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5fffa; /* Light green background for containers */
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.routine img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.faq, .reviews, .contact {
+    background-color: #f5fffa; /* Light green background for these sections */
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #556b2f; /* Olive green */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #556b2f; /* Olive green */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #8fbc8f; /* Darken the button color on hover */
+}
+
+/* Add more styling as needed */
