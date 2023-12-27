@@ -1,89 +1,178 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
+    background-color: #b7c4a4; /* Mix of olive and sage green */
     margin: 0;
-    padding: 0;
-    background-color: #eaf7e1; /* Light green background */
-    color: #333; /* Dark text color */
 }
 
 nav {
-    background-color: #556b2f; /* Olive green */
-    padding: 10px 0;
+    background-color: #4d7b5e; /* Darker green for navigation */
+    padding: 1rem;
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff; /* White text color for navigation links */
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
 }
 
-main {
-    text-align: center;
+nav a:hover {
+    color: #e8e8e8; /* Lighter color on hover */
 }
 
 .hero {
-    background-color: #8fbc8f; /* Dark olive green */
-    padding: 40px;
-    color: #fff; /* White text color */
+    padding: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8fb688; /* Light green */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #a1c49d; /* Lighter green on hover */
 }
 
 .features {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    padding: 2rem;
 }
 
 .feature {
     text-align: center;
-    margin: 20px;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.about {
+    background-color: #b7c4a4; /* Mix of olive and sage green */
+    padding: 2rem;
+    text-align: center;
+}
+
+.about a {
+    color: #4d7b5e; /* Darker green for links */
+    text-decoration: underline;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 1rem;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f5fffa; /* Light green background for containers */
-    border-radius: 8px;
-    margin-top: 20px;
+    background-color: #b7c4a4; /* Mix of olive and sage green */
+    padding: 2rem;
 }
 
-.routine img {
-    max-width: 100%;
-    border-radius: 8px;
+.container h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.review {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.review p {
+    margin: 0;
 }
 
 .faq, .reviews, .contact {
-    background-color: #f5fffa; /* Light green background for these sections */
-    padding: 40px;
     text-align: center;
-    margin-top: 20px;
+    padding: 2rem;
+}
+
+.contact p {
+    margin: 0.5rem 0;
 }
 
 footer {
-    background-color: #556b2f; /* Olive green */
-    color: #fff;
     text-align: center;
-    padding: 10px;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #556b2f; /* Olive green */
+    padding: 1rem;
+    background-color: #4d7b5e; /* Darker green for footer */
     color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
 }
 
-.cta-button:hover {
-    background-color: #8fbc8f; /* Darken the button color on hover */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
 }
 
-/* Add more styling as needed */
+.review {
+    background-color: #c5e1af; /* Light green box for reviews */
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.review p {
+    margin: 0;
+}
